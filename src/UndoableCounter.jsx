@@ -53,6 +53,7 @@ export const UndoableCounter = () => {
       },
       ...history,
     ]);
+    setUndo([]);
   }
 
   function handleDecrement() {
@@ -67,6 +68,7 @@ export const UndoableCounter = () => {
       },
       ...history,
     ]);
+    setUndo([]);
   }
 
   function handleDivide() {
@@ -81,6 +83,7 @@ export const UndoableCounter = () => {
       },
       ...history,
     ]);
+    setUndo([]);
   }
 
   function handleMultiply() {
@@ -95,6 +98,7 @@ export const UndoableCounter = () => {
       },
       ...history,
     ]);
+    setUndo([]);
   }
   return (
     <>
