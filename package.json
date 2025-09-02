@@ -1,6 +1,6 @@
 {
   "name": "undo-redo-counter",
-  "homepage": "https://designed2code.github.io/undoable-counter",
+  "homepage": "https://designed2code.github.io/undoable-counter/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
