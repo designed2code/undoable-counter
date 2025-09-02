@@ -1,12 +1,27 @@
-# React + Vite
+# Undoable Counter (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React component that demonstrates **undo/redo** with a **history table**.  
+Perfect for machine-coding rounds: state updates, immutable history, and UX polish.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Counter starts at **0**
+- Operations: **/2**, **-1**, **+1**, **x2**
+- Each operation adds a **row to history** (operation, previous value, new value)
+- **Undo** reverts the last action and updates the count
+- **Redo** reapplies the last undone action
+- Performing a **new operation clears the redo stack** (as in typical editors)
+- **Reset** sets count to 0 and clears both history and redo stacks
 
-## Expanding the ESLint configuration
+## Tech
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Hooks, functional state updates)
+
+## Getting Started
+
+```bash
+# with Vite
+npm create vite@latest undoable-counter -- --template react
+cd undoable-counter
+npm install
+```
